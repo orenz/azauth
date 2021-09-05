@@ -1,0 +1,19 @@
+{
+  "name": "azauth",
+  "version": "1.0.0",
+  "description": "auth",
+  "main": "middleware.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orenz/azauth.git"
+  },
+  "author": "goldfish systems",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orenz/azauth/issues"
+  },
+  "homepage": "https://github.com/orenz/azauth#readme"
+}
