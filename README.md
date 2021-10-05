@@ -34,6 +34,38 @@ azauth client for node.js, single line authentication
    
    If you use session, the session object will also holde the user profile under ```req.session.azAuth```
    
+   # Completer server example that will work anywhere out of the box 
+   ```
+    const express = require('express')
+    const app = express()
+
+    const port = 80
+    const azauth=require('azauth');
+
+    app.use(express.static('public'))
+    app.use(azauth.auth);
+    app.get('/', (req, res) => {
+      res.send('Hello World!')
+    })
+
+    app.listen(port, () => {
+      console.log(`Example app listening at port :${port}`)
+    })
+
+    app.get('/userLogin', async function(req,res){
+           console.log(req.azAuth.data) 
+          res.send(`Hi <b> ${req.azAuth.data.emails[0].value} </b> <br>this all the profile info <br> ${JSON.stringify(req.azAuth.data)}` )
+
+    })
+
+   ```
+   
+   login buttons for google and facebook (assuming you are on 127.0.0.1)
+   ```
+   <!-- callback url is encodeURIComponent('http://127.0.0.1/userLogin'); 
+   <a href="http://auth.azjs.io/googleAuth/authTo/http%3A%2F%2F127.0.0.1%2FuserLogin">GOOLLE LOGNIN</a>
+    <a href="http://auth.azjs.io/facebookAuth/authTo/http%3A%2F%2F127.0.0.1%2FuserLogin">facebook LOGNIN</a>
+    ```
    Enjoy 
    
    
