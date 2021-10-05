@@ -13,9 +13,10 @@ azauth client for node.js, single line authentication
   That is all. 
   No registration, no keys , no routs... just those lines.
   
-  for the login button the href is :
+  for the login buttons the href is :
    ```
-   http://auth.azjs.io/googleAuth/authTo/{callback url}
+   http://auth.azjs.io/googleAuth/authTo/{callback url} 
+   http://auth.azjs.io/facebookAuth/authTo/{callback url}
    ```
    
    The calback url shuold be encoded (you can use  encodeURIComponent() in the chrome console for this)
