@@ -65,7 +65,9 @@ azauth client for node.js, single line authentication
    <!-- callback url is encodeURIComponent('http://127.0.0.1/userLogin'); 
    <a href="http://auth.azjs.io/googleAuth/authTo/http%3A%2F%2F127.0.0.1%2FuserLogin">GOOLLE LOGNIN</a>
     <a href="http://auth.azjs.io/facebookAuth/authTo/http%3A%2F%2F127.0.0.1%2FuserLogin">facebook LOGNIN</a>
+    
     ```
+    
    Enjoy 
    
    
