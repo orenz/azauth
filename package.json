@@ -1,6 +1,6 @@
 {
   "name": "azauth",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "auth",
   "main": "middleware.js",
   "scripts": {
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/orenz/azauth/issues"
   },
-  "homepage": "https://github.com/orenz/azauth#readme"
+  "homepage": "https://github.com/orenz/azauth#readme",
+  "dependencies": {
+    "azauth": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^2.6.2"
+  }
 }

@@ -1,3 +1,4 @@
+
 const jwt = require('jsonwebtoken');
 const fetch = require('node-fetch');
 
@@ -27,6 +28,6 @@ function auth(req, res, next){
 
 async function init(){
     
-    publicKey=await (await fetch('http://auth.azjs.io/api/publicKey')).text();
+    publicKey=await (await fetch('https://auth.azjs.io/api/publicKey')).text();
 }
 module.exports.auth=auth;
