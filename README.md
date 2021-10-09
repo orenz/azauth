@@ -3,7 +3,7 @@ azauth client for node.js, single line authentication
 
 # usage
 
-  Short explainer video: <a href="https://youtu.be/5WehZTrgG8o">https://youtu.be/hjMx8EuyZJ8</a>
+  Short explainer video: <a href="https://youtu.be/5WehZTrgG8o">https://youtu.be/5WehZTrgG8o</a>
   
   on the server side for express, just add
   
