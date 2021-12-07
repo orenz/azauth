@@ -10,6 +10,7 @@ azauth client for node.js, single line authentication
   ```
   const azauth=require('azauth');
   app.use(azauth.auth);
+  azauth.setOrigin('^mydomain.com$'); //this must match the host of your call back url
   ```
 
   That is all. 
