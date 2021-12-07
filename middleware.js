@@ -31,8 +31,8 @@ function auth(req, res, next){
 
             
 
-            const re = new RegExp(authrizedCallbakcURL);            
-            if (!re.test(myURL.host)){
+            //const re = new RegExp(authrizedCallbakcURL);            
+            if (authrizedCallbakcURL != myURL.host){
                 console.log(`ERROR ${myURL.host} is not permited by origin ${authrizedCallbakcURL}`)
                 return next();
             }
