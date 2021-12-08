@@ -30,12 +30,20 @@ function auth(req, res, next){
             const myURL = new URL(decoded?.data?.azCallBackUrl);            
 
             
+            if (authrizedCallbakcURL instanceof RegExp){                
+                if (!authrizedCallbakcURL.test(myURL.host)){
+                    console.log(`ERROR ${myURL.host} is not permited by origin ${authrizedCallbakcURL}`)
+                    return next();
+                }
 
-            //const re = new RegExp(authrizedCallbakcURL);            
-            if (authrizedCallbakcURL != myURL.host){
-                console.log(`ERROR ${myURL.host} is not permited by origin ${authrizedCallbakcURL}`)
-                return next();
+            }else if (authrizedCallbakcURL != myURL.host){
+                    console.log(`ERROR ${myURL.host} is not permited by origin ${authrizedCallbakcURL}`)
+                    return next();
             }
+
+            
+            //const re = new RegExp(authrizedCallbakcURL);            
+            
 
             req.azAuth=decoded
             if (req.session){
