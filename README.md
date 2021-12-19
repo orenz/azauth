@@ -1,6 +1,10 @@
 # azauth
 azauth client for node.js, single line authentication
 
+# install 
+
+npm install azauth
+
 # usage
 
   Short explainer video: <a href="https://youtu.be/5WehZTrgG8o">https://youtu.be/5WehZTrgG8o</a>
