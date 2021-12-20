@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/orenz/azauth/issues"
   },
-  "homepage": "https://github.com/orenz/azauth#readme"
+  "homepage": "https://github.com/orenz/azauth#readme",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^2.6.6"
+  }
 }
