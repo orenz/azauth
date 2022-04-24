@@ -42,7 +42,7 @@ npm install azauth
    
    If you use session, the session object will also holde the user profile under ```req.session.azAuth```
    
-   # Completer server example that will work anywhere out of the box 
+   # Complete server example that will work anywhere out of the box 
    ```
     const express = require('express')
     const app = express()
